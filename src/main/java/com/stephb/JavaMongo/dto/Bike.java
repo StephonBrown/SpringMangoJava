@@ -19,4 +19,9 @@ public class Bike {
     private String modelNumber;
     private String color;
     private String description;
+
+    @Override
+    public String toString() {
+        return "This bike model is " + this.modelNumber + " is the color " + this.color + " and is " + description;
+    }
 }

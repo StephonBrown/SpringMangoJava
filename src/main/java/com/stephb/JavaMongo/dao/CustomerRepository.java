@@ -13,11 +13,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  *
  * @author stephon
  */
-public interface CustomerDao extends MongoRepository<Customer, String>{
+public interface CustomerRepository extends MongoRepository<Customer, String>{
     @Override
     public List<Customer> findAll();
     public List<Customer> findByFirstName(String firstName);
     public List<Customer> findByLastName(String lastName);
-    @Override
-    public Customer findById(String id);
 }
